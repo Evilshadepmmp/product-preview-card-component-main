@@ -1,0 +1,129 @@
+:root{
+    /* Primary */
+     --Darkcyan: hsl(158, 36%, 37%);
+     --Darkcyan2: hsl(158, 36%, 20%);
+     --Cream: hsl(30, 38%, 92%);
+     
+     /* Neutral */
+     --Verydarkblue: hsl(212, 21%, 14%);
+     --Darkgrayishblue: hsl(228, 12%, 48%);
+     --White: hsl(0, 0%, 100%);
+ 
+     --font-family: 'Fraunces', serif;
+     --font-family2: 'Montserrat', sans-serif;
+     
+     --paragraph: 14px
+ }
+ html{
+     box-sizing: border-box;
+ }
+ *,*:before, *:after{
+     box-sizing: inherit;
+ }
+ body{
+    background-color: var(--Cream);
+ }
+ h1{
+    font-family: var(--font-family);
+ }
+ p{
+    font-weight: normal;
+    color: var(--Darkgrayishblue);
+    font-family: var(--font-family2);
+    font-size: var(--paragraph);
+ }
+ .container{
+    margin: 1em auto;
+    width: 90%;
+ }
+ .main-container-cards{
+    display: flex;
+    justify-content: center;
+ }
+ .main-card{
+    background-color: var(--White);
+    border-radius: .5em;
+    overflow: hidden;
+    max-width: 400px;
+ }
+ .card-img{
+    background-image: url(../img/image-product-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+ }
+.card-tex{
+    padding: 1.2em;
+    margin-bottom: 1em;
+}
+.p-text{
+    text-transform: uppercase;
+    letter-spacing: .3em;
+}
+.card-price{
+    display: flex;
+    align-items: center;
+}
+.p-color{
+    color: var(--Darkcyan);
+    font-family: var(--font-family);
+    font-size: 2em;
+    color: var(--Darkcyan);
+}
+.p-tacha{
+    text-decoration: line-through;
+    margin-left: 1.3em;
+}
+.boton{
+    text-align: center;
+}
+.boton-buy{
+    background-color: var(--Darkcyan);
+    padding: 1em 6em;
+    text-decoration: none;
+    color: var(--White);
+    border-radius: .5em;
+    background-image: url(/img/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center left 70px;
+}
+.boton-buy:hover{
+    background-color: var(--Darkcyan2);
+}
+@media (min-width: 768px) {
+    .main-card{
+        display: flex;
+        max-width: 600px;
+    }
+    .card-img{
+        background-image: url(../img/image-product-desktop.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: auto;
+        flex: 1;
+     }
+     .main-card-tex{
+        flex: 1;
+     }
+     .main-container-cards{
+        height: 100vh;
+        align-items: center;
+     }
+     .boton-buy{
+        padding: 1em 5.8em;
+    }
+}
+
+.footer{
+    margin: 1em;
+}
+ .attribution{ 
+     font-size: 11px; 
+     text-align: center;
+ }
+ .attribution a{ 
+     color: hsl(228, 45%, 44%); 
+ }
